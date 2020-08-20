@@ -1,12 +1,6 @@
 const http = require("http");
 const fs = require("fs");
 
-// function rqListener(req, res) {}
-
-// // this function will run everytime it is requested
-// http.createServer(rqListener);
-
-// ES6 version can also use function rather than above
 const server = http.createServer((req, res) => {
   const url = req.url;
   const method = req.method;
@@ -29,7 +23,6 @@ const server = http.createServer((req, res) => {
       const parsedBody = Buffer.concat(body).toString();
       const message = parsedBody.split("=")[1];
       fs.writeFileSync("message.txt", message);
-      console.log(parsedBody);
     });
     res.statusCode = 302;
     res.setHeader("Location", "/");
@@ -43,5 +36,4 @@ const server = http.createServer((req, res) => {
   res.end();
 });
 
-// tell the server to listen for requests on Port 3000
 server.listen(3000);
