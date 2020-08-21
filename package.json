@@ -1,0 +1,24 @@
+{
+  "name": "completenodejs",
+  "version": "1.0.0",
+  "description": "Udemy Course",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emmabindi/CompleteNodeJS.git"
+  },
+  "author": "Emma Bindi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emmabindi/CompleteNodeJS/issues"
+  },
+  "homepage": "https://github.com/emmabindi/CompleteNodeJS#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
