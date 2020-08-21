@@ -17,7 +17,9 @@
     "url": "https://github.com/emmabindi/CompleteNodeJS/issues"
   },
   "homepage": "https://github.com/emmabindi/CompleteNodeJS#readme",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.17.1"
+  },
   "devDependencies": {
     "nodemon": "^2.0.4"
   }
