@@ -10,6 +10,10 @@ const app = express();
 
 // this pkg calls next inside itself. It parses data sent thru forms
 app.use(bodyParser.urlencoded({ extended: false }));
+
+// grants access for read only access to items in this folder:
+app.use(express.static(path.join(__dirname, "public")));
+
 app.use("/admin", adminRoutes);
 app.use(shopRoutes);
 
