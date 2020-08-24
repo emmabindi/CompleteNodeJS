@@ -9,7 +9,7 @@ const bodyParser = require("body-parser");
 const app = express();
 
 // global config value
-app.set("view engine", "pug");
+app.set("view engine", "ejs");
 app.set("views", "views");
 
 // this pkg calls next inside itself. It parses data sent thru forms
